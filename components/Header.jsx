@@ -12,6 +12,7 @@ import cartIcon from "@/public/images/cart.png";
 import heartIcon from "@/public/images/heart.png";
 import manIcon from "@/public/images/man.png";
 import searchIcon from "@/public/images/search.png";
+import editIcon from "@/public/images/edit.png";
 
 function Header() {
   const [storeActive, setStoreActive] = useState(false);

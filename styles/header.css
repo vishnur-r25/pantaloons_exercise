@@ -147,7 +147,7 @@
 }
 
 .main-header-nav {
-    padding-left: 5px;
+  padding-left: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -163,6 +163,22 @@
   font-size: 12px;
   letter-spacing: 0.26px;
   opacity: 1;
+  position: relative;
+  padding-top: 10px;
+}
+
+.main-header-nav-ele::after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: transparent;
+}
+
+.main-header-nav-ele:hover::after {
+  background-color: #ffcc00;
 }
 
 .main-header-actions {
@@ -172,7 +188,7 @@
 }
 
 .search-container {
-    width: 170px;
+  width: 170px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #000000;
@@ -185,7 +201,8 @@
 }
 
 .search-input {
-    border: none;
+  border: none;
+  outline: none;
   font-family: "Figtree";
   font-size: 12px;
   width: 100px;
@@ -205,7 +222,7 @@
 
 
 .abfrl-logo {
-    padding-left: 2px;
+  padding-left: 2px;
   width: 73px;
   height: 80px;
   object-fit: contain;
