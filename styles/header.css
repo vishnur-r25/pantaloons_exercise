@@ -235,3 +235,9 @@
   height: 80px;
   object-fit: contain;
 }
+.cart-icon{
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  cursor: pointer;
+}

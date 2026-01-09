@@ -5,8 +5,6 @@ import "@/styles/objects.css";
 export default function JSObjectsDemo() {
     const [formData, setFormData] = useState(null);
     const [methodOutput, setMethodOutput] = useState(null);
-
-    // Copy State
     const [copyMode, setCopyMode] = useState(null);
     const [copyData, setCopyData] = useState(null);
 

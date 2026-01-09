@@ -130,7 +130,7 @@ function Header() {
           </div>
           <Image src={heartIcon} alt="Wishlist" className="action-icon" />
           <Image src={manIcon} alt="Profile" className="action-icon" />
-          <Image src={cartIcon} alt="Cart" className="action-icon" />
+          <Image src={cartIcon} alt="Cart" className="action-icon cart-icon"  />
           <Image src={abfrlLogo} alt="ABFRL" className="abfrl-logo" />
         </div>
       </div>
