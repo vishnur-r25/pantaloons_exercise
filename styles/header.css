@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap");
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+.top-header {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 400;
+  height: 24px;
+  padding: 0px 55px;
+  font-family: "Figtree";
+}
+
+.top-header-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header-nav {
+  max-width: 465px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.top-header-nav-ele {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.top-header-nav-ele:not(:last-child)::after {
+  content: "|";
+  margin: 0 9px;
+}
+
+.top-header-store-nav {
+  display: flex;
+  align-items: center;
+  max-width: 340px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 15px;
+  opacity: 1;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.toggle-button {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  padding: 0;
+}
+
+.store-icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.store-scroll-box {
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+}
+
+.store-scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 4s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-header {
+  height: 24px;
+  background-color: #f5f5f5;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-header-wrapper {
+  font-family: "Figtree";
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-header-text {
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left-new 30s linear infinite;
+}
+
+@keyframes scroll-left-new {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.main-header {
+  height: 90px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  gap: 30px;
+}
+
+.main-header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.main-header-nav {
+    padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  opacity: 1;
+}
+
+.main-header-nav-ele {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Figtree";
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.26px;
+  opacity: 1;
+}
+
+.main-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-container {
+    width: 170px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+}
+
+.search-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.search-input {
+    border: none;
+  font-family: "Figtree";
+  font-size: 12px;
+  width: 100px;
+}
+
+.search-input::placeholder {
+  color: #868686;
+  letter-spacing: 0.26px;
+}
+
+.action-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+.abfrl-logo {
+    padding-left: 2px;
+  width: 73px;
+  height: 80px;
+  object-fit: contain;
+}
