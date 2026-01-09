@@ -4,6 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import "@/styles/header.css";
+import Switch from "@mui/material/Switch";
+import EditIcon from "@mui/icons-material/Edit";
 
 import storeIcon from "@/public/images/store.png";
 import logo from "@/public/images/logo.svg";
@@ -40,18 +42,53 @@ function Header() {
           </div>
           <div className="top-header-store-nav">
             <span>ENTIRE COLLECTION</span>
-            <button
-              className="toggle-button"
-              onClick={() => {
+            <Switch
+              checked={storeActive}
+              onChange={() => {
                 setStoreActive(!storeActive);
-                console.log(storeActive);
               }}
-            ></button>
+              size="small"
+              sx={{
+                width: 34,
+                height: 14,
+                padding: 0,
+                '& .MuiSwitch-switchBase': {
+                  padding: 0,
+                  margin: '1px',
+                  transitionDuration: '300ms',
+                  '&.Mui-checked': {
+                    transform: 'translateX(20px)',
+                    color: '#fff',
+                    '& + .MuiSwitch-track': {
+                      backgroundColor: '#4da09fff',
+                      opacity: 1,
+                      border: 0,
+                    },
+                  },
+                },
+                '& .MuiSwitch-thumb': {
+                  boxSizing: 'border-box',
+                  margin: 0.1,
+                  width: 10,
+                  height: 10,
+                },
+                '& .MuiSwitch-track': {
+                  borderRadius: 7,
+                  backgroundColor: '#808080',
+                  opacity: 1,
+                },
+              }}
+            />
             <Image src={storeIcon} alt="Store icon" className="store-icon" />
             {storeActive ? (
-              <div key="active" className="store-scroll-box">
-                <div className="store-scroll-text">BROOKFIELDS PLAZA</div>
-              </div>
+              <>
+                <div key="active" className="store-scroll-box">
+                  <div className="store-scroll-text">BROOKFIELDS PLAZA</div>
+                </div>
+                <div className="edit-icon-container">
+                  <EditIcon className="mui-edit-icon" />
+                </div>
+              </>
             ) : (
               <div key="inactive">
                 <span>STORE MODE</span>

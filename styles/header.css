@@ -57,19 +57,25 @@
   white-space: nowrap;
 }
 
-.toggle-button {
-  height: 15px;
-  width: 15px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  cursor: pointer;
-  padding: 0;
-}
-
 .store-icon {
   width: 25px;
   height: 25px;
   object-fit: contain;
+}
+
+
+.edit-icon-container {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  margin-left: 2px;
+  border-left: 2px solid #ffffff;
+}
+
+.mui-edit-icon {
+  font-size: 14px !important;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .store-scroll-box {
